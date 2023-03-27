@@ -37,13 +37,14 @@ body{
 nav {
     background-color: #000000;
     padding: 20px;
-    
+    position: absolute;
+    width: 95%;
   }
   ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
-    position: fixed;
+    
     width: 100%;
   }
 ul li {
@@ -71,6 +72,8 @@ ul li a::before{
 }
 ul li a:hover::before {
     width: 100%;
+    color : rgb(153, 16, 187);
+    -webkit-text-stroke: 1px rgba(165, 55, 168, 0.521);
 }
 .div-page{
     width: 100vw;
@@ -126,4 +129,43 @@ ul li a:hover::before {
     width: 400px;
     background-color: rgb(153, 16, 187);
     transition: 0.5s;
+}
+.contain{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    padding: 0 10%;
+}
+.photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(153, 16, 187) ;
+    border-radius: 20px;
+    box-shadow:  5px 5px 60px rgb(153, 16, 187);
+    
+}
+#tapping{
+    color :rgb(153, 16, 187);
+}
+#CV{
+    margin :10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    border: solid 2px #fff;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(153, 16, 187);
+}
+#CV:hover{
+    margin :10px;
+    color: rgb(153, 16, 187);
+    text-decoration: none;
+    font-size: 1.5em;
+    border: solid 2px rgb(153, 16, 187);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
 }

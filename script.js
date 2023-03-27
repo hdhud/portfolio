@@ -1,6 +1,9 @@
 const semestre = {
   0: {
-    0: "Implémentation d'un besoin client",
+    0: {
+      0: "Implémentation d'un besoin client",
+      1: "J'ai pu mettre en pratique mes connaissances en programmation web pour implémenter un besoin client. J'ai pu utiliser les technologies HTML, CSS et Javascript pour réaliser ce projet.",
+    },
     1: "Comparaison algorithmique d'algorithme",
     2: "Installation et configuration de poste informatique",
     3: "Gestion d'une base de données",
@@ -124,3 +127,13 @@ function typing() {
   }
 }
 typing();
+
+const ue1 = document.getElementById("ue1");
+ue1.addEventListener("mouseenter", () => {
+  ue1.appendChild(document.createElement("<p>" + semestre[0][0][1] + "</p>"));
+  ue1.append;
+});
+
+ue1.addEventListener("mouseleave", () => {
+  ue1.style.backgroundColor = "white";
+});
